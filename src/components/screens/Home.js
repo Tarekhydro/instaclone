@@ -3,7 +3,7 @@ import React, { useState,useEffect } from 'react';
 const Home = () => {
     const [data, setData] = useState([]);
     useEffect(()=>{
-        fetch('/allpost', {
+        fetch('https://tarek-bg.com/instaclone/allpost', {
             headers:{
                 "Authorization": "Bearer " + localStorage.getItem('jwt')
             }
