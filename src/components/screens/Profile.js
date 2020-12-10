@@ -7,7 +7,7 @@ const Profile = () => {
     const {state, dispatch} = useContext(UserContext)
     
     useEffect(()=>{
-        fetch('/mypost', {
+        fetch('https://tarek-bg.com/instaclone/mypost', {
         headers:{
             "Authorization": "Bearer " + localStorage.getItem('jwt')
         }
@@ -17,7 +17,7 @@ const Profile = () => {
         })
     },[])
     useEffect(()=>{
-        fetch('/userphoto', {
+        fetch('https://tarek-bg.com/instaclone/userphoto', {
             headers:{
                 "Authorization": "Bearer " + localStorage.getItem('jwt')
             }
@@ -30,7 +30,6 @@ const Profile = () => {
                     setPhoto(res)
                 }
             })
-            //setPhoto(result)
         })
     }, [])
 
