@@ -11,7 +11,7 @@ const CreatePost = () => {
 
     useEffect(()=>{
         if(url){
-            fetch('/createpost', {//pas la peine decrire tout le http etc grace a proxy dans le package json
+            fetch('https://tarek-bg.com/instaclone/createpost', {//pas la peine decrire tout le http etc grace a proxy dans le package json
                 method: "POST",
                 headers: { 
                     "Content-Type": "application/json",
