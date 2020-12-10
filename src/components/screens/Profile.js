@@ -42,7 +42,7 @@ const Profile = () => {
                 borderBottom:"1px solid grey"
                 }}>
                 <div>
-                    <img alt="persona" style={{width:"160px", height:"160px", borderRadius:"80px"}} 
+                    <img alt="persona" class="circle" style={{width:"160px", height:"160px", borderRadius:"80px"}} 
                     src={photos.url}/>
                 </div>
                 <div>
@@ -63,7 +63,7 @@ const Profile = () => {
                 {
                     profile.map(userprofile => {
                         return(
-                            <img key={userprofile.id} className="item" alt={userprofile.title} src={userprofile.photo} />
+                            <img key={userprofile.id} className="item" alt={userprofile.title} src={userprofile.photo} class="responsive-img" />
                         )
                     })
                 }
