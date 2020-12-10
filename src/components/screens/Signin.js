@@ -15,7 +15,7 @@ const Signin = () => {
             M.toast({html: 'Invalid Email', classes:"rounded #c62828 red darken-3"})
             return;
         }
-        fetch('/signin', {//pas la peine decrire tout le http etc grace a proxy dans le package json
+        fetch('https://tarek-bg.com/instaclone/signin', {//pas la peine decrire tout le http etc grace a proxy dans le package json
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
